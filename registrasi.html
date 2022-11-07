@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registrasi </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title-login"> Login </div>
+            <div class="title-login"> Registrasi </div>
+        </div>
+        <div class="form-container"></div>
+        <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked >
+            <input type="radio" name="slide" id="signup">
+            <Label for="login" class="slide-login"> login </Label>
+            <Label for="signup" class="slide-signup"> signup </Label>
+            <div class="slide-tab"></div>
+        </div>
+        <div class="form-inner">
+            <form action="#" class="login">
+                <div class="field">
+                    <input type="text" placeholder="Masukan Email" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Masukan Password" required>
+                </div>
+                <div class="pass-link">
+                    <a href="#"> lupa password</a>
+                </div>
+                <div class="field-btn">
+                    <div class="btn-layer"></div>
+                        <input type="submit" value="login">
+                </div>
+                <div class="signup-link"> belum punya akun <a href=""> daftar sekarang yuu.. </a></div>
+            </form>
+            <form action="#" class="signup">
+                <div class="field">
+                    <input type="text" placeholder="Masukan Email" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Masukan Password" required>
+                </div>
+                <div class="field">
+                    <input type="password" placeholder="Konfirmasi Password" required>
+                </div>
+                <div class="field-btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="signup">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const logintext= document.queryselector(".title-text.login")
+        const loginform= document.queryselector(".form.login")
+        const loginbtn= document.queryselector(".label.login")
+        const signupbtn= document.queryselector(".label.signup")
+        const signuplink= document.queryselector(".form.signup-link a")
+        signupbtn.onclick(()=>{
+            loginform.style.marginleft="-50%";
+            logintext.style.marginleft="-50%";
+        })
+        loginbtn.onclick(()=>{
+            loginform.style.marginleft="-0%";
+            logintext.style.marginleft="-0%";
+        })
+        signuplink.onclick(()=>{
+            signupbtn.onclick();
+            return false;
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Nama <input type="text" id="name">
+
+    <br>
+      jenis kelamin
+        <input type="radio" id="gender" value="p">Perempuan
+        <input type="radio" id="gender" value="l">Laki-Laki
+    </br>
+
+    <br>
+      Agama
+        <input type="checkbox" id="agama">islam
+        <input type="checkbox" id="agama">kristen
+    </br>
+
+    <br>
+      Alamat 
+        <input type="text" id="alamat">
+    </br>
+
+    <br>
+      No Hp
+        <input type="number" name="angka" id="hp">
+    <br>
+
+    <br>
+     kewarganegaraan
+      <select id="kewarganegaraan">
+        <option value="">--PILIH--</option>
+        <option value="I"> Indonesia </option>
+        <Option value="M"> Malaysia </Option>
+        <OPtion value="B"> Brunei </OPtion>
+     </select>
+    </br>
+
+    <br>
+    <label> Pewarnaan Background : </label>
+     <input type="color" id="Bg">
+       <label> Pewarnaan Teks : </label>
+         <input type="color" id="Text">
+    </br>
+
+    <br>
+         <input type="button" value="submit" ondblclick=cek()>
+    </br>
+
+    <script>
+        var N = document.getElementById("name")
+        var J = document.getElementById("gender")
+        var A = document.getElementById("agama")
+        var AL = document.getElementById("alamat")
+        var NO = document.getElementById("hp")
+        var K = document.getElementById("kewargenegaraan")
+        var x = document.getElementById("Bg")
+        var y = document.getElementById("Text")
+
+        N.addEventListener("change" , (event) => (
+            document.body.style.background = N.value
+        ))
+
+        J.addEventListener("change" , (event) => (
+            document.body.style.background = J.value
+        ))
+
+        A.addEventListener("change" , (event) => (
+            document.body.style.background = A.value
+        ))
+
+        AL.addEventListener("change" , (event) => (
+            document.body.style.background = AL.value
+        ))
+
+        NO.addEventListener("change" , (event) => (
+            document.body.style.background = NO.value
+        ))
+
+        K.addEventListener("change" , (event) => (
+            document.body.style.background = K.value
+        ))
+
+        x.addEventListener("change" , (event) => (
+            document.body.style.background = x.value
+        ))
+
+        y.addEventListener("change" , (event) => (
+            document.body.style.background = y.value
+        ))
+
+    </script>
+</body>
+
+</html>

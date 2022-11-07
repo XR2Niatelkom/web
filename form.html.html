@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pendaftaran </title>
+</head>
+<style> 
+</style>
+  <body>
+    <fieldset>
+        <legend style="color: rgb(206, 166, 166);"> Data Diri </legend>
+          <h4 style="color:brown"> daftar sekarang dan ceritakan pendapatmu tentang website ini. </h4>
+            <form id="from" method="POST">
+               </div>
+           <div class="row">
+           <div class="col-sm-8">
+           <div class="form-group">
+               <label> Nama lengkap :</label>
+               <input type="text" name="nama" class="form-control" placeholder="Masukan nama lengkap">
+           </div>
+          </div>
+           <div class="col-sm-5">
+               <div class="from-group">
+                   <label> Nomer Identitas(NIK) :</label>
+                   <input type="text" name="NIk" class="form-control" placeholder="Masukan nomer NIk">
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-sm-4">
+                   <div class="from group">
+                       <label> Tempat lahir :</label>
+                       <input type="text" name="tempat_lahir" class="form-control" placeholder="Masukan tempat lahir">
+                   </div>
+               </div>
+                   <div class="col-sm-3">
+                       <div class="from group">
+                           <label> tanggal lahir :</label>
+                           <input type="date" name="tanggal_lahir" class="form-control">
+                       </div>
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col-sm-4">
+                       <div class="from group">
+                           <label> Jenis Kelamin  :</label>
+                           <select class="from-control" name="Jenis Kelamin">
+                               <option> pilih </option>
+                               <option value="l"> laki-laki </option>
+                               <option value="p"> perempuan </option>
+                           </select>
+                       </div>
+                   </div>
+                   <div class="col-sm-3">
+                       <div class="from group">
+                           <label> Agama :</label>
+                           <select class="from-control" name="Agama">
+                               <option> pilih </option>
+                               <option value="islam"> islam </option>
+                               <option value="kristen"> kristen </option>
+                               <option value="katolik"> katolik </option>
+                               <option value="hindu"> hindu </option>
+                               <option value="budha"> budha </option>
+                               <option value="lainnya"> lainnya </option>
+                           </select>
+                       </div>
+                   </div>
+                   <div class="col-sm-4">
+                       <div class="from group">
+                           <label> Kewarnegaraanc :</label>
+                           <br>
+                           <input type="radio" name="Kewarnegaraan" value="WNI"> Warga negara indonesia (WNI)
+                           <br>
+                           <input type="radio" name="Kewarnegaraan" value="WNA"> Warga negara asing (WNA)
+                       </div>
+                   </div>
+               </div>
+               <div class="col-sm-5">
+                   <div class="from group">
+                       <label> E-mail :</label>
+                       <input type="email" name="email" class="form-control" placeholder="Masukan E-mail">
+                   </div>
+               </div>
+               <div class="col-sm-4">
+                   <div class="from group">
+                       <label> Nomer Handphone :</label>
+                       <input type="text" name="no_hp" class="form-control" placeholder="Masukan Nomer Handphone">
+                   </div>
+               </div>
+           </div>
+           <div class="col-sm-5">
+               <div class="from group">
+                   <label> Nama Ayah kandung :</label>
+                   <input type="text" name="nama_ayah" class="form-control" placeholder="Masukan Nama Ayah Kandung">
+               </div>
+           </div>
+           <div class="col-sm-4">
+               <div class="from group">
+                   <label> Nama Ibu kandung :</label>
+                   <input type="text" name="nama_ibu" class="form-control" placeholder="Masukan Nama Ibu Kandung">
+               </div>
+           </div>
+       </div>
+       <div class="alert alert-primary" role="alert">
+           <strong style="color: rgb(255, 0, 255);"> Data Domisili </strong>
+       </div>
+       <div class="row">
+           <div class="col-sm-6">
+               <div class="from group">
+                   <label> Data Domisili </label>
+                   <textarea class="from_control" name="alamat domisili" rows="2" id="alamat"></textarea>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col-sm">
+                   <div class="from group">
+                       <label> Kacamatan </label>
+                       <input type="text" name="kacamatan" class="form-control" placeholder="Masukan Kacamatan">
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col-sm">
+                       <div class="from group">
+                           <label> Kabupaten/kota </label>
+                           <input type="text" name="kabupaten" class="form-control" placeholder="Masukan Kabupaten">
+                       </div>
+                   </div>
+                   <div class="row">
+                   <div class="col-sm">
+                       <div class="from group">
+                           <label> Provinsi </label>
+                           <input type="text" name="provinsi" class="form-control" placeholder="Masukan Provinsi">
+                       </div>
+                   </div>
+                   </div>
+                   <div class="alert alert-primary" role="alert">
+                       <strong style="color:yellow ;"> Data Pendidikan Sebelumnya </strong>
+                   </div>
+                   <div class="col-sm-5">
+                       <div class="from group">
+                           <label> Asal Sekolah :</label>
+                           <input type="text" name="asal_sekolah" class="form-control" placeholder="Masukan Asal Sekolah">
+                       </div>
+                   </div>
+                   <div class="col-sm-5">
+                       <div class="from group">
+                           <label> Tahun Lulus :</label>
+                           <input type="text" name="lulusan" class="form-control" placeholder="Masukan Tahun Lulus">
+                       </div>
+                   </div>
+                   <div class="col-sm-5">
+                       <div class="from group">
+                           <label> Rata-rata Nilai Rapot :</label>
+                           <input type="text" name="nilai_rapot" class="form-control" placeholder="Masukan Rata-rata Nilai Rapot">
+                       </div>
+                   </div>
+                   <div class="col-sm-5">
+                       <div class="from group">
+                           <label> Alamat Sekolah :</label>
+                           <textarea class="form-control" name="Alamat_sekolah" rows="1" id="alamat"></textarea>
+                       </div>
+                   </div>
+                   <div class="col-sm-3">
+                       <div class="from group">
+                           <label> Akreditas Sekolah :</label>
+                           <select class="from-control" name="Pendidikan">
+                               <option> pilih </option>
+                               <option value="a"> amat baik </option>
+                               <option value="b"> baik </option>
+                               <option value="c"> cukup </option>
+                           </select>
+                       </div>
+                   </div>
+               </div>
+               <div class="alert alert-success">
+                   <strong>
+                       <input type="checkbox" name="pernyataan1" value="pernyataan1">
+                       saya menyatakan bahwa data diatas sudah saya isi dengan benar.
+                   </strong>
+               </div>
+           <td>
+           <button type="submit" name="submit" class="btn btn-primary">Daftar</button>
+           <button type="reset" name="reset" class="btn btn-secondary">Reset</button>
+           </td>
+          </form>
+       </body>
+    </fieldset>
+  

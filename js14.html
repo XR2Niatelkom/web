@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> ohayooo </p>
+    <label> Pewarnaan Background : </label>
+    <input type="color" id="Bg">
+    <label> Pewarnaan Teks : </label>
+    <input type="color" id="Text">
+
+    <Script>
+        var x = document.getElementById("Bg")
+        var y = document.getElementById("Text")
+        x.addEventListener("change" , (event) => (
+            document.body.style.background = x.value
+        ))
+
+        y.addEventListener("change" , (event) => (
+            document.body.style.background = y.value
+        ))
+    </Script>
+</body>
+</html>

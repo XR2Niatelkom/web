@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+html.body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: -webkit-linear-gradient(left,#e056fd,#dff9fb);
+}
+
+::selection{
+    background: #dff9fb ;
+    color: #e056fd;
+}
+.wrapper{
+    overflow: hidden;
+    max-width: 390px;
+    background: #e056fd;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 11px 7px 16px 5px #000000;;
+}
+
+.wrapper.title-text{
+    display: flex;
+    width: 200%;
+}
+
+.wrapper.title{
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.06s cubic-bezier(0.68, 0.55 , 0.265, 1.55);
+}
+
+.wrapper.slide-controls{
+    position:absolute;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+
+.slide-controls.slide{
+    height: 100px;
+    width: 100px;
+    color: #dff9fb;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    line-height: 48px;
+    z-index: 1;
+    transition: all 0.06s ease;
+}
+
+.slide-controls label .signup{
+    color:#be2edd ;
+}
+
+.slide-controls .slide-tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 5px;
+    background:  -webkit-linear-gradient(left,#e056fd,#dff9fb);
+    transition: all 0.06s cubic-bezier(0.68, 0.55 , 0.265, 1.55);
+}
+input[type="radio"]{
+    display: none;
+}
+
+#signup:checked ~ label.signup{
+    color: white;
+    cursor: default;
+    user-select: none;
+}
+
+#signup:checked ~ .slide-tab{
+    left: 50%;
+}
+
+#signup:checked ~ label.login{
+    color: #000;
+}
+
+#login:checked ~ label.signup{
+    color: #000;
+}
+
+#login:checked ~ label.login{
+    cursor: default;
+    user-select: none;
+}
+
+.wrapper .for-container{
+    width: 100%;
+    overflow: hidden;
+}
+
+.from-container .from-inner{
+    display: flex;
+    width: 200%;
+}
+
+.from-container .from-inner form{
+    transition: all 0.06s cubic-bezier(0.68, 0.55 , 0.265, 1.55);
+    width: 50%;
+}
+
+.from-inner .from .field{
+    height: 50%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.from-inner .from .field input{
+    height: 50%;
+    width: 100%;
+    outline: none; 
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+}
+
+.from-inner form .field input:focus{
+    border-color: #fc83bb;
+}
+
+.from-inner form .field input::placeholder{
+    color: #e056fd;
+    transition: all 0.3s ease;
+}
+
+.form .field input:focus::placeholder{
+    color: #fc83bb;
+}
+
+.from-inner form .pass-link{
+    margin-top: 5px;
+}
+
+.from-inner form .signup-link{
+   margin-top: 30px;
+   text-align: center;
+}
+
+.from-inner form .pass-link a:hover,
+.from-inner form .signup-link a:hover
+{
+   text-decoration: underline;
+}
+
+form .btn{
+    height: 50%;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+form .btn .btn-layer{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    background: -webkit-linear-gradient(left,#e056fd,#dff9fb,#e056fd,#dff9fb);
+}
+
+form .btn:hover .btn-layer{
+    left: 0;
+}
+ 
+form .btn input[type="submit"]{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background: none;
+    color: #dff9fb;
+    border: none;
+    padding-left: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
